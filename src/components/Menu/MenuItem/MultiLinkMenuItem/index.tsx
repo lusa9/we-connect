@@ -8,13 +8,13 @@ export default ({ slug, title, url, children }: MenuItemProps) => {
   }
 
   return (
-    <a
+    <button
       onClick={() => {
         console.log(`navigate to ${slug}`);
       }}
       {...{ className }}
     >
       <h6>{title}</h6>
-    </a>
+    </button>
   );
 };
