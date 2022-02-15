@@ -10,6 +10,12 @@
   transition: fill 0.15s;
 }
 
-.component svg:hover {
+@media (hover: hover) {
+  .component svg:hover {
+    fill: #009ee0;
+  }
+}
+
+.component svg:active {
   fill: #009ee0;
 }

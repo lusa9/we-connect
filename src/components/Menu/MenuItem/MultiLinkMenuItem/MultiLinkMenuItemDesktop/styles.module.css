@@ -11,9 +11,11 @@
   font-size: small;
 }
 
-.component:hover {
-  color: #288bd0;
-  transition: color 0.15s;
+@media (hover: hover) {
+  .component:hover {
+    color: #288bd0;
+    transition: color 0.15s;
+  }
 }
 
 .linkContainer {
