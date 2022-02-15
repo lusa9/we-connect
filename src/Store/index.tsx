@@ -1,5 +1,9 @@
+import { MenuItemProvider } from "./MenuItemProvider";
+
 interface Props {
   children?: React.ReactNode;
 }
 
-export default ({ children }: Props) => <div {...{ children }} />;
+export default ({ children }: Props) => (
+  <MenuItemProvider>{children}</MenuItemProvider>
+);

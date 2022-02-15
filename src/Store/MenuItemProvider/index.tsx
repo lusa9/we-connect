@@ -25,8 +25,18 @@ export const MenuItemProvider = ({ children }: MenuItemProps) => {
   });
 
   useEffect(() => {
-    localStorage.setItem("menu-items", JSON.stringify(menuItems));
+    if (menuItems) {
+      localStorage.setItem("menu-items", JSON.stringify(menuItems));
+    } else {
+      localStorage.removeItem("menu-item");
+    }
   }, [menuItems]);
+
+  useEffect(() => {
+    fetch("response.json")
+      .then((response) => response.json())
+      .then(console.log);
+  }, []);
 
   return (
     <MenuItemContext.Provider value={{ menuItems }}>
