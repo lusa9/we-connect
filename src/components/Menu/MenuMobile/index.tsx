@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { MenuItemContext } from "Store/MenuItemProvider";
-import MenuItem from "../MenuItem";
+import { ReactComponent as HamburgerIcon } from "assets/icon_hamburger.svg";
 import styles from "./styles.module.css";
 
 export default () => {
@@ -12,9 +12,9 @@ export default () => {
         WE-CON<span className={styles.accent}>E</span>CT
       </h5>
       {menuItems ? (
-        <nav className={styles.menuItemContainer}>
-          {menuItems.map(MenuItem)}
-        </nav>
+        <button>
+          <HamburgerIcon />
+        </button>
       ) : (
         <h6 className={styles.loadingLabel}>Loading...</h6>
       )}

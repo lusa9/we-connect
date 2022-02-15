@@ -1,12 +1,7 @@
 .component {
-  padding: 0px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  background-color: #232323;
-  color: white;
-  text-transform: uppercase;
 }
 
 .accent {
@@ -15,9 +10,8 @@
 
 .menuItemContainer {
   display: flex;
-  gap: 16px;
 }
 
 .loadingLabel {
-  padding: 16px 8px;
+  padding: 16px;
 }

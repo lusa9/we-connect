@@ -7,12 +7,12 @@
   gap: 6px;
 }
 
+.component::after {
+  content: "v";
+  font-size: small;
+}
+
 .component:hover {
   color: #288bd0;
   transition: color 0.15s;
-}
-
-.multiLink::after {
-  content: "v";
-  font-size: small;
 }

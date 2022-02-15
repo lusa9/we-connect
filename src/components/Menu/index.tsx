@@ -1,13 +1,14 @@
 import { useMediaMinWidths } from "hooks/usemedia";
 import MenuDesktop from "./MenuDesktop";
 import MenuMobile from "./MenuMobile";
+import styles from "./styles.module.css";
 
 export default () => {
-  const isDesktop = useMediaMinWidths([968], [true], false);
+  const Menu = useMediaMinWidths([968], [MenuDesktop], MenuMobile);
 
-  if (isDesktop) {
-    return <MenuDesktop />;
-  } else {
-    return <MenuMobile />;
-  }
+  return (
+    <div className={styles.component}>
+      <Menu />
+    </div>
+  );
 };
