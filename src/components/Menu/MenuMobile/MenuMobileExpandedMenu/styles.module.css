@@ -12,3 +12,7 @@
   height: 100%;
   color: white;
 }
+
+.loadingLabel {
+  padding: 16px;
+}

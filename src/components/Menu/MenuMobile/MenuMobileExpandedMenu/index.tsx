@@ -13,7 +13,11 @@ export default ({ expanded }: { expanded: boolean }) => {
   }
   return (
     <div {...{ className }}>
-      {menuItems ? menuItems.map(MenuItem) : <h6>Loading...</h6>}
+      {menuItems ? (
+        menuItems.map(MenuItem)
+      ) : (
+        <h6 className={styles.loadingLabel}>Loading...</h6>
+      )}
     </div>
   );
 };
