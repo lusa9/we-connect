@@ -1,30 +1,23 @@
+import { useMediaMinWidths } from "hooks/usemedia";
 import { useState } from "react";
 import { MenuItemProps } from "types/MenuItemProps";
 import MenuItem from "..";
+import MultiLinkMenuItemDesktop from "./MultiLinkMenuItemDesktop";
+import MultiLinkMenuItemMobile from "./MultiLinkMenuItemMobile";
 import styles from "./styles.module.css";
 
-interface MultiLinkMenuItemProps {
+export interface MultiLinkMenuItemProps {
   slug: string;
   title: string;
   children: MenuItemProps[];
 }
 
-export default ({ slug, title, children }: MultiLinkMenuItemProps) => {
-  const [expanded, setExpanded] = useState(false);
-  return (
-    <button
-      className={styles.component}
-      onClick={() => {
-        setExpanded((expanded) => !expanded);
-      }}
-      onBlur={() => {
-        setExpanded(false);
-      }}
-    >
-      <h6>{title}</h6>
-      {expanded && (
-        <div className={styles.linkContainer}>{children.map(MenuItem)}</div>
-      )}
-    </button>
+export default (props: MultiLinkMenuItemProps) => {
+  const MultiLinkMenuItem = useMediaMinWidths(
+    [968],
+    [MultiLinkMenuItemDesktop],
+    MultiLinkMenuItemMobile
   );
+
+  return <MultiLinkMenuItem {...props} />;
 };

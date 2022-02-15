@@ -20,7 +20,7 @@ export default () => {
           <HamburgerIcon />
         </button>
       </div>
-      <MenuMobileExpandedMenu {...{ expanded }} />
+      {expanded && <MenuMobileExpandedMenu {...{ expanded }} />}
     </div>
   );
 };

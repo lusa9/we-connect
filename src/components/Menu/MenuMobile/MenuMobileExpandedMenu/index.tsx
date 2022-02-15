@@ -6,13 +6,8 @@ import styles from "./styles.module.css";
 export default ({ expanded }: { expanded: boolean }) => {
   const { menuItems } = useContext(MenuItemContext);
 
-  let className = styles.component;
-
-  if (expanded) {
-    className += ` ${styles.expanded}`;
-  }
   return (
-    <div {...{ className }}>
+    <div className={styles.component}>
       {menuItems ? (
         menuItems.map(MenuItem)
       ) : (

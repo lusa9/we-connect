@@ -1,0 +1,37 @@
+.component {
+  position: relative;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.component::after {
+  content: "v";
+  font-size: small;
+}
+
+.component:hover {
+  color: #288bd0;
+  transition: color 0.15s;
+}
+
+.linkContainer {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  color: black;
+}
+
+.linkContainer > button {
+  box-sizing: border-box;
+  padding: 0px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.linkContainer > button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

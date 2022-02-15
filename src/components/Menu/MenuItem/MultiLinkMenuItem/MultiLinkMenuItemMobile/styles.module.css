@@ -1,6 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .component {
-  position: relative;
-  padding: 16px;
+  box-sizing: border-box;
+  padding: 0px 16px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -17,21 +22,17 @@
 }
 
 .linkContainer {
-  position: absolute;
-  top: 100%;
-  right: 0px;
-  background-color: white;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  background-color: lightgray;
   color: black;
 }
 
 .linkContainer > button {
+  box-sizing: border-box;
   padding: 0px 16px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .linkContainer > button:hover {
-  color: initial;
   background-color: rgba(0, 0, 0, 0.1);
 }

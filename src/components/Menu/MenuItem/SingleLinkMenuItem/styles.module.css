@@ -1,6 +1,6 @@
 .component {
-  padding: 16px;
-  height: 100%;
+  box-sizing: border-box;
+  padding: 0px 16px;
   display: flex;
   align-items: center;
   gap: 6px;
