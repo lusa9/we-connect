@@ -1,0 +1,10 @@
+.component {
+  color: white;
+  padding: 16px 8px;
+  text-transform: uppercase;
+}
+
+.component:hover {
+  color: #288bd0;
+  transition: color 0.15s;
+}

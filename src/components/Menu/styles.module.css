@@ -1,0 +1,21 @@
+.component {
+  padding: 0px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: #232323;
+}
+
+.logo {
+  color: white;
+}
+
+.accent {
+  color: #009ee0;
+}
+
+.menuItemContainer {
+  display: flex;
+  gap: 16px;
+}

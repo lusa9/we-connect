@@ -1,24 +1,73 @@
 [
   {
-    "slug": "we-conect",
-    "title": "We-Conect Home page",
-    "url": "https://www.we-conect.com/",
-    "children": [
-      {
-        "slug": "live-events",
-        "title": "Live Event",
-        "url": "https://www.we-conect.com/liveevents"
-      },
-      {
-        "slug": "digital-managed-events ",
-        "title": "Digital Managed Events ",
-        "url": "https://www.we-conect.com/l digital-managed-events "
-      }
-    ]
+    "slug": "live-events",
+    "title": "Live Event",
+    "url": "https://www.we-conect.com/liveevents"
   },
   {
-    "slug": "google",
-    "title": "Google",
-    "url": "https://www.google.de"
+    "slug": "virtual-events",
+    "title": "Virtual Events",
+    "url": "https://www.we-conect.com/virtual-events"
+  },
+  {
+    "slug": "hybrid-events",
+    "title": "Hybrid Events",
+    "url": "https://www.we-conect.com/hybrid-events"
+  },
+  {
+    "slug": "digital-managed-events",
+    "title": "Digital Managed Events",
+    "url": "https://www.we-conect.com/digital-managed-events"
+  },
+  {
+    "slug": "b2b-webinars",
+    "title": "B2B Webinars",
+    "url": "https://www.we-conect.com/media-and-webcasts"
+  },
+  {
+    "slug": "event-tech",
+    "title": "Event Tech",
+    "url": "https://www.we-conect.com/event-tech-en"
+  },
+  {
+    "slug": "about-us",
+    "title": "About Us",
+    "children": [
+      {
+        "slug": "we-company",
+        "title": "we.COMPANY",
+        "url": "https://www.we-conect.com/about-us"
+      },
+      {
+        "slug": "we-people",
+        "title": "we.People",
+        "url": "https://www.we-conect.com/people"
+      },
+      {
+        "slug": "career",
+        "title": "Career",
+        "url": "https://www.we-conect.com/career"
+      },
+      {
+        "slug": "social-responsibility",
+        "title": "Social Responsibility",
+        "url": "https://www.we-conect.com/social-responsibility"
+      },
+      {
+        "slug": "our-awards",
+        "title": "Our Awards",
+        "url": "https://www.we-conect.com/our-awards"
+      },
+      {
+        "slug": "contact-us",
+        "title": "Contact Us",
+        "url": "https://www.we-conect.com/contact-us"
+      },
+      {
+        "slug": "update-corona-safe-business-event-standards",
+        "title": "Update Corona / Safe Business Event Standards",
+        "url": "https://www.we-conect.com/update-corona-safe-business-event-standards"
+      }
+    ]
   }
 ]
