@@ -1,0 +1,16 @@
+.component {
+  padding: 16px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.component:hover {
+  color: #288bd0;
+  transition: color 0.15s;
+}
+
+.multiLink::after {
+  content: "v";
+  font-size: smaller;
+}

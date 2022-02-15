@@ -32,11 +32,12 @@
   {
     "slug": "about-us",
     "title": "About Us",
+    "url": "https://www.we-conect.com/about-us",
     "children": [
       {
         "slug": "we-company",
         "title": "we.COMPANY",
-        "url": "https://www.we-conect.com/about-us"
+        "url": "https://www.we-conect.com/company"
       },
       {
         "slug": "we-people",

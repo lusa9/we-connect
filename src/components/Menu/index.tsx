@@ -1,21 +1,13 @@
-import { useContext } from "react";
-import { MenuItemContext } from "Store/MenuItemProvider";
-import MenuItem from "./MenuItem";
-import styles from "./styles.module.css";
+import { useMediaMaxWidths } from "hooks/usemedia";
+import MenuDesktop from "./MenuDesktop";
+import MenuMobile from "./MenuMobile";
 
 export default () => {
-  const { menuItems } = useContext(MenuItemContext);
+  const isMobile = useMediaMaxWidths([768], [true], false);
 
-  if (!menuItems) {
-    return <h1>Loading...</h1>;
+  if (isMobile) {
+    return <MenuMobile />;
+  } else {
+    return <MenuDesktop />;
   }
-
-  return (
-    <div className={styles.component}>
-      <h5 className={styles.logo}>
-        WE-CON<span className={styles.accent}>E</span>CT
-      </h5>
-      <div className={styles.menuItemContainer}>{menuItems.map(MenuItem)}</div>
-    </div>
-  );
 };

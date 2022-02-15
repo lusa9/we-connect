@@ -2,9 +2,17 @@
   color: white;
   padding: 16px 8px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .component:hover {
   color: #288bd0;
   transition: color 0.15s;
+}
+
+.multiLink::after {
+  content: "v";
+  font-size: small;
 }

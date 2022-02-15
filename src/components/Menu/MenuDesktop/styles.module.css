@@ -5,10 +5,8 @@
   align-items: center;
   gap: 16px;
   background-color: #232323;
-}
-
-.logo {
   color: white;
+  text-transform: uppercase;
 }
 
 .accent {
@@ -18,4 +16,8 @@
 .menuItemContainer {
   display: flex;
   gap: 16px;
+}
+
+.loadingLabel {
+  padding: 16px 8px;
 }

@@ -1,8 +1,10 @@
 import { MenuItemProps } from "types/MenuItemProps";
-import styles from "./styles.module.css";
+import MultilinkMenuItem from "./MultiLinkMenuItem";
+import SingleLinkMenuItem from "./SingleLinkMenuItem";
 
-export default ({ slug, title, url }: MenuItemProps) => (
-  <a className={styles.component} key={slug}>
-    <h6>{title}</h6>
-  </a>
-);
+export default (props: MenuItemProps) =>
+  props.children ? (
+    <MultilinkMenuItem {...props} key={props.slug} />
+  ) : (
+    <SingleLinkMenuItem {...props} key={props.slug} />
+  );
