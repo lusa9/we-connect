@@ -1,0 +1,14 @@
+.component {
+  overflow: hidden;
+  height: 0px;
+  transition: color 1s;
+  color: transparent;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.expanded {
+  height: 100%;
+  color: white;
+}

@@ -1,4 +1,6 @@
 .component {
+  padding: 0px 16px;
+  background-color: #232323;
   display: flex;
   justify-content: space-between;
   align-items: center;

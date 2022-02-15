@@ -1,23 +1,26 @@
-import { useContext } from "react";
-import { MenuItemContext } from "Store/MenuItemProvider";
+import { useState } from "react";
 import { ReactComponent as HamburgerIcon } from "assets/icon_hamburger.svg";
 import styles from "./styles.module.css";
+import MenuMobileExpandedMenu from "./MenuMobileExpandedMenu";
 
 export default () => {
-  const { menuItems } = useContext(MenuItemContext);
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className={styles.component}>
-      <h5>
-        WE-CON<span className={styles.accent}>E</span>CT
-      </h5>
-      {menuItems ? (
-        <button>
+    <div className={styles.container}>
+      <div className={styles.component}>
+        <h5>
+          WE-CON<span className={styles.accent}>E</span>CT
+        </h5>
+        <button
+          onClick={() => {
+            setExpanded((expanded) => !expanded);
+          }}
+        >
           <HamburgerIcon />
         </button>
-      ) : (
-        <h6 className={styles.loadingLabel}>Loading...</h6>
-      )}
+      </div>
+      <MenuMobileExpandedMenu {...{ expanded }} />
     </div>
   );
 };
