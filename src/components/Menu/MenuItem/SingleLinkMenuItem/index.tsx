@@ -1,7 +1,11 @@
-import { MenuItemProps } from "types/MenuItemProps";
 import styles from "./styles.module.css";
 
-export default ({ slug, title }: MenuItemProps) => (
+interface SingleLinkMenuItemProps {
+  slug: string;
+  title: string;
+}
+
+export default ({ slug, title }: SingleLinkMenuItemProps) => (
   <button
     className={styles.component}
     onClick={() => {
