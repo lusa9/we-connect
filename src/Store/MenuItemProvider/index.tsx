@@ -1,28 +1,41 @@
 import { createContext, useEffect, useState } from "react";
 
-interface MenuItemContextProps {}
-
-export const MenuItemContext = createContext<MenuItemContextProps>({});
-
 interface MenuItemProps {
+  slug: string;
+  title: string;
+  url: string;
+  children?: MenuItemProps[];
+}
+
+interface MenuItemContextProps {
+  menuItems: MenuItemProps[] | undefined;
+}
+
+export const MenuItemContext = createContext<MenuItemContextProps>({
+  menuItems: undefined,
+});
+
+interface MenuItemProviderProps {
   children?: React.ReactNode;
 }
 
-export const MenuItemProvider = ({ children }: MenuItemProps) => {
-  const [menuItems] = useState<MenuItemProps[]>(() => {
-    const cachedItems = localStorage.getItem("menu-items");
-    if (!cachedItems) {
-      return undefined;
+export const MenuItemProvider = ({ children }: MenuItemProviderProps) => {
+  const [menuItems, setMenuItems] = useState<MenuItemProps[] | undefined>(
+    () => {
+      const cachedItems = localStorage.getItem("menu-items");
+      if (!cachedItems) {
+        return undefined;
+      }
+
+      const parsedItems = JSON.parse(cachedItems);
+
+      if (!parsedItems) {
+        return undefined;
+      }
+
+      return parsedItems;
     }
-
-    const parsedItems = JSON.parse(cachedItems);
-
-    if (!parsedItems) {
-      return undefined;
-    }
-
-    return parsedItems;
-  });
+  );
 
   useEffect(() => {
     if (menuItems) {
@@ -35,7 +48,7 @@ export const MenuItemProvider = ({ children }: MenuItemProps) => {
   useEffect(() => {
     fetch("response.json")
       .then((response) => response.json())
-      .then(console.log);
+      .then(setMenuItems);
   }, []);
 
   return (
