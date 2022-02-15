@@ -29,17 +29,18 @@ export const useMedia = <T>(
       return () =>
         mediaQueryLists.forEach((mql) => mql.removeListener(handler));
     },
+    //eslint-disable-next-line
     [] // Empty array ensures effect is only run on mount and unmount
   );
   return value;
 };
 
-export const useMediaMaxWidths = <T>(
+export const useMediaMinWidths = <T>(
   maxWidths: number[],
   values: T[],
   defaultValue: T
 ) => {
-  const queries = maxWidths.map((value) => `(max-width: ${value}px)`);
+  const queries = maxWidths.map((value) => `(min-width: ${value}px)`);
 
   return useMedia(queries, values, defaultValue);
 };

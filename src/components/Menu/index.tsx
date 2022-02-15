@@ -1,13 +1,13 @@
-import { useMediaMaxWidths } from "hooks/usemedia";
+import { useMediaMinWidths } from "hooks/usemedia";
 import MenuDesktop from "./MenuDesktop";
 import MenuMobile from "./MenuMobile";
 
 export default () => {
-  const isMobile = useMediaMaxWidths([768], [true], false);
+  const isDesktop = useMediaMinWidths([968], [true], false);
 
-  if (isMobile) {
-    return <MenuMobile />;
-  } else {
+  if (isDesktop) {
     return <MenuDesktop />;
+  } else {
+    return <MenuMobile />;
   }
 };
