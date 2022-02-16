@@ -3,7 +3,7 @@ import { MultiLinkMenuItemProps } from "..";
 import MenuItem from "../..";
 import styles from "./styles.module.css";
 
-export default ({ slug, title, children }: MultiLinkMenuItemProps) => {
+export default ({ title, children }: MultiLinkMenuItemProps) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <div

@@ -5,7 +5,7 @@ import Component from "./index";
 const setup = () =>
   render(
     <MemoryRouter>
-      <Component />
+      <Component slug="/about" title="About" children={[]} />
     </MemoryRouter>
   );
 
