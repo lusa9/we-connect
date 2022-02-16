@@ -36,12 +36,12 @@
     "children": [
       {
         "slug": "we-company",
-        "title": "we.COMPANY",
+        "title": "Company",
         "url": "https://www.we-conect.com/company"
       },
       {
         "slug": "we-people",
-        "title": "we.People",
+        "title": "People",
         "url": "https://www.we-conect.com/people"
       },
       {
