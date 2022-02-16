@@ -1,5 +1,6 @@
 .component {
   position: relative;
+  cursor: pointer;
   padding: 16px;
   display: flex;
   align-items: center;
