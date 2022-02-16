@@ -1,8 +1,11 @@
 import Menu from "components/Menu";
 import Store from "Store";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export default () => (
   <Store>
-    <Menu />
+    <Router>
+      <Menu />
+    </Router>
   </Store>
 );

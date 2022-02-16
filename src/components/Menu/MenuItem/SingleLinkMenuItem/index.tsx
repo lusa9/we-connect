@@ -1,3 +1,4 @@
+import { Routes, Route, Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
 interface SingleLinkMenuItemProps {
@@ -6,12 +7,7 @@ interface SingleLinkMenuItemProps {
 }
 
 export default ({ slug, title }: SingleLinkMenuItemProps) => (
-  <button
-    className={styles.component}
-    onClick={() => {
-      console.log(`navigate to ${slug}`);
-    }}
-  >
+  <Link to={slug} className={styles.component}>
     <h6>{title}</h6>
-  </button>
+  </Link>
 );
