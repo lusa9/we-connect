@@ -7,10 +7,6 @@
   align-items: center;
 }
 
-.accent {
-  color: #009ee0;
-}
-
 .menuItemContainer {
   display: flex;
 }

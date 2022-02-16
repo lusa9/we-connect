@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { MenuItemContext } from "Store/MenuItemProvider";
 import MenuItem from "../MenuItem";
+import MenuLogo from "../MenuLogo";
 import styles from "./styles.module.css";
 
 export default () => {
@@ -8,9 +9,7 @@ export default () => {
 
   return (
     <div className={styles.component}>
-      <h5>
-        WE-CON<span className={styles.accent}>E</span>CT
-      </h5>
+      <MenuLogo />
       {menuItems ? (
         <nav className={styles.menuItemContainer}>
           {menuItems.map(MenuItem)}

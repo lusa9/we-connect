@@ -1,5 +1,10 @@
 [
   {
+    "slug": "/",
+    "title": "Home",
+    "url": "https://www.we-conect.com"
+  },
+  {
     "slug": "live-events",
     "title": "Live Event",
     "url": "https://www.we-conect.com/liveevents"

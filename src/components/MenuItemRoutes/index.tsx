@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { MenuItemContext } from "Store/MenuItemProvider";
 import styles from "./styles.module.css";
@@ -21,6 +21,7 @@ export default () => {
             }
           />
         ))}
+      <Route path="*" element={<Navigate replace to="/" />} />
     </Routes>
   );
 };

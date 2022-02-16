@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ReactComponent as HamburgerIcon } from "assets/icon_hamburger.svg";
 import styles from "./styles.module.css";
 import MenuMobileExpandedMenu from "./MenuMobileExpandedMenu";
+import MenuLogo from "../MenuLogo";
 
 export default () => {
   const [expanded, setExpanded] = useState(false);
@@ -9,9 +10,7 @@ export default () => {
   return (
     <div className={styles.container}>
       <div className={styles.component}>
-        <h5>
-          WE-CON<span className={styles.accent}>E</span>CT
-        </h5>
+        <MenuLogo />
         <button
           onClick={() => {
             setExpanded((expanded) => !expanded);
