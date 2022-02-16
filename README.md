@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# We-Conect Menu Bar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been delivered as a part of "We-Conect Challenge". All features have been manually tested by human and heavily inspected for responsiveness. Codebase is covered with automated end-to-end tests using Cypress.
 
-## Available Scripts
+## Mobile UX
 
-In the project directory, you can run:
+In order to have the navigation links displayed we need to press the hamburger menu icon first. This decision adds one more step to the whole process but keeps the UI clean.
 
-### `yarn start`
+![iphones](iphones.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Desktop UX
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+When we have wider viewports, we are able to display the navigation links inside navigation bar right away. Multiple links will be displayed in a paper-styled popover after the click on a particular menu item.
 
-### `yarn test`
+![macbook](macbook.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Build Steps
 
-### `yarn build`
+After cloning the project, navigate to the project directory and then:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Run `yarn` or `yarn install`. This installs all the neccessary dependencies for a project.
+2. Run `yarn start`. This starts the app in development mode.
+3. Try to break the navigation bar.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open the command line, navigate to the project directory and then:
 
-### `yarn eject`
+1. Run `node_modules/.bin/cypress open`. This opens Cypress dashboard for end-to-end testing.
+2. Run `yarn test` if you'd like to check the unit test coverage.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![cypress](cypress.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## About
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Application has been developed using [React](https://reactjs.org/) & [Typescript](https://www.typescriptlang.org/), state is managed using [Context API](https://reactjs.org/docs/context.html). End-to-end testing is achieved using [Cypress](https://www.cypress.io/) and mockups have been created using [Figma](https://www.figma.com/). Time needed for implementation and manual + automated testing the feature was about 2 days.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To we.CONECT Global Leaders GmbH by Luka.
