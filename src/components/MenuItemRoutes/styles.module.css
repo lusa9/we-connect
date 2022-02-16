@@ -1,9 +1,5 @@
-.relativeContainer {
-  height: 100%;
-  position: relative;
-}
-
 .component {
+  position: relative;
   box-sizing: border-box;
   height: 100%;
   padding: 16px;

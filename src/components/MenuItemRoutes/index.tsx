@@ -7,23 +7,21 @@ export default () => {
   const { menuItems } = useContext(MenuItemContext);
 
   return (
-    <div className={styles.relativeContainer}>
-      <Routes>
-        {menuItems
-          ?.flatMap(({ children, ...props }) => (children ? children : [props]))
-          .map(({ slug, title }) => (
-            <Route
-              key={slug}
-              path={slug}
-              element={
-                <div className={styles.component}>
-                  <h1>{title}</h1>
-                </div>
-              }
-            />
-          ))}
-        <Route path="*" element={<Navigate replace to="/" />} />
-      </Routes>
-    </div>
+    <Routes>
+      {menuItems
+        ?.flatMap(({ children, ...props }) => (children ? children : [props]))
+        .map(({ slug, title }) => (
+          <Route
+            key={slug}
+            path={slug}
+            element={
+              <div className={styles.component}>
+                <h1>{title}</h1>
+              </div>
+            }
+          />
+        ))}
+      <Route path="*" element={<Navigate replace to="/" />} />
+    </Routes>
   );
 };
