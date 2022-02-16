@@ -1,8 +1,10 @@
 .component {
+  position: absolute;
+  z-index: 1;
   height: 100%;
+  width: 100%;
   transition: color 1s;
-  color: transparent;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   color: white;

@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { MenuItemContext } from "Store/MenuItemProvider";
 import styles from "./styles.module.css";
 
-export default ({ expanded }: { expanded: boolean }) => {
+export default () => {
   const { menuItems } = useContext(MenuItemContext);
 
   return (

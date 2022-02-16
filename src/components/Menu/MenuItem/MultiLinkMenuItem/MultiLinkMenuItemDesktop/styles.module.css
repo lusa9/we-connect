@@ -21,6 +21,7 @@
 
 .linkContainer {
   position: absolute;
+  z-index: 1;
   top: 100%;
   right: 0px;
   background-color: white;

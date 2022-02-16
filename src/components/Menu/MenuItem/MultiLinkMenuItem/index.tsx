@@ -11,7 +11,7 @@ export interface MultiLinkMenuItemProps {
 
 export default (props: MultiLinkMenuItemProps) => {
   const MultiLinkMenuItem = useMediaMinWidths(
-    [968],
+    [1120],
     [MultiLinkMenuItemDesktop],
     MultiLinkMenuItemMobile
   );
