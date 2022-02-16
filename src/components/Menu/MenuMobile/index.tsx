@@ -20,6 +20,7 @@ export default () => {
       <div className={styles.component}>
         <MenuLogo />
         <button
+          data-cy="hamburger-menu-btn"
           onClick={() => {
             setExpanded((expanded) => !expanded);
           }}
