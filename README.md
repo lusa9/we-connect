@@ -26,10 +26,13 @@ After cloning the project, navigate to the project directory and then:
 
 Open the command line, navigate to the project directory and then:
 
-1. Run `node_modules/.bin/cypress open`. This opens Cypress dashboard for end-to-end testing.
-2. Run `yarn test` if you'd like to check the unit test coverage.
+1. Run `node_modules/.bin/cypress open` to open the Cypress dashboard for end-to-end testing.
 
-![cypress](cypress.png)
+   ![cypress](cypress.png)
+
+2. Run `yarn test` to check the unit test coverage.
+
+   ![unit](unit.png)
 
 ## About
 
